@@ -1,9 +1,10 @@
-<h1>Olá eu sou o Gabriel Mello</h1>
+## Olá eu sou o Gabriel Mello 🤝, muito prazer!
+
 <h2>Seja Bem-Vindo ao meu perfil!</h2>
 <p>- 🔭 Estou a procura de uma vaga de Trabalho Front-End</p>
 <p>- 🌱 Estudando React , React Native</p>
 <p>- 📫 Email Para Contato: gabrielmellomoraes1407@gmail.com</p>
-<p>- 😄 Pronouns: ele/dele</p>
+<p>- 😄 Bora Codar!</p>
 
 <div>
 <a href="https://github.com/GabrielMello1407"/>
