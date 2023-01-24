@@ -17,7 +17,7 @@
   <img align="center" alt="Gabriel-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
   <img align="center" alt="Gabriel-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="Gabriel-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="right" alt="Rafa-pic" height="150" style="border-radius:50px;" src="https://cdn.discordapp.com/attachments/485622447761129472/1067500040697946182/MELLO.png?width=676&height=676">
+  <img align="right" alt="Gabriel-pic" height="150" style="border-radius:50px;" src="https://cdn.discordapp.com/attachments/485622447761129472/1067500040697946182/MELLO.png?width=676&height=676">
 </div>
   
   
