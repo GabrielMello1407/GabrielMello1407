@@ -1,10 +1,10 @@
-## Olá eu sou o Gabriel Mello 🤝, muito prazer!
+## Hello, I'm Gabriel Mello 🤝, nice to meet you!
 
-<h2>Seja Bem-Vindo ao meu perfil!</h2>
-<p>- 🔭 Estou a procura de uma vaga de Trabalho Front-End</p>
-<p>- 🌱 Estudando React , React Native</p>
-<p>- 📫 Email Para Contato: gabrielmellomoraes1407@gmail.com</p>
-<p>- 😄 Bora Codar!</p>
+<h2>Welcome to my profile!</h2>
+<p>- 🔭 I'm looking for a front-end job</p>
+<p>- 🌱 Studying React, React Native</p>
+<p>- 📫 Contact email: gabrielmellomoraes1407@gmail.com</p>
+<p>- 😄 Let´s go code!</p>
 
 <div>
 <a href="https://github.com/GabrielMello1407"/>
