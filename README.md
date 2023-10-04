@@ -2,7 +2,7 @@
 
 <h2>Welcome to my profile!</h2>
 <p>- 🔭 I'm looking for a front-end job</p>
-<p>- 🌱 Studying React, React Native</p>
+<p>- 🌱 I'm constantly learning</p>
 <p>- 📫 Contact email: gabrielmellomoraes1407@gmail.com</p>
 <p>- 😄 Let´s go code!</p>
 
