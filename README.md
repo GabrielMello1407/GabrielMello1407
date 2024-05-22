@@ -8,9 +8,9 @@
 <p>- 😄 Let´s go code!</p>
 <div align="center">
   <h3>Connect with me:</h3>
-<a href="https://www.linkedin.com/in/gabrielmellomoraes/" target="blank"><img src="https://github.com/feathericons/feather/blob/main/icons/linkedin.svg" alt="https://www.linkedin.com/in/gabrielmellomoraes/" height="30" width="40" /></a>
-<a href="https://www.instagram.com/gabriel_mello_moraes/" target="blank"><img src="https://github.com/feathericons/feather/blob/main/icons/instagram.svg" alt="https://www.instagram.com/gabriel_mello_moraes/" height="30" width="40" /></a>
-<a href="mailto:gabrielmellomoraes1407@gmail.com" target="blank"><img  src="https://github.com/feathericons/feather/blob/main/icons/mail.svg" alt="gabrielmellomoraes1407@gmail.com" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/gabrielmellomoraes/" target="_blank"><img src="https://github.com/feathericons/feather/blob/main/icons/linkedin.svg" alt="https://www.linkedin.com/in/gabrielmellomoraes/" height="30" width="40" /></a>
+<a href="https://www.instagram.com/gabriel_mello_moraes/" target="_blank"><img src="https://github.com/feathericons/feather/blob/main/icons/instagram.svg" alt="https://www.instagram.com/gabriel_mello_moraes/" height="30" width="40" /></a>
+<a href="mailto:gabrielmellomoraes1407@gmail.com" target="_blank"><img  src="https://github.com/feathericons/feather/blob/main/icons/mail.svg" alt="gabrielmellomoraes1407@gmail.com" height="30" width="40" /></a>
 </div>
 
 <br/>
