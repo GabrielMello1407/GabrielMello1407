@@ -41,7 +41,6 @@
   <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original.svg">
   <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://github.com/devicons/devicon/blob/master/icons/mongoose/mongoose-original.svg">
   <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-plain-wordmark.svg">
-  <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg">
 </div>
   
   
