@@ -24,7 +24,7 @@
   <h2>◉ My Languages and Tools</h2>
   <img align="center" style="max-width: 100% alt="Gabriel-HTML" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-original-wordmark.svg">
+  <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-original.svg">
   <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg">
   <img align="center" style="max-width: 100% alt="Gabriel-CSS" height="50" width="50" src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg">
   <img align="center" style="max-width: 100% alt="Gabriel-Js" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
