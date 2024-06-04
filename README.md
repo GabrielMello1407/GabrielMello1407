@@ -1,5 +1,5 @@
 <h1 align="center">Hello, I'm Gabriel Mello 🤝, nice to meet you! I'am Front-End developer and a future Fullstack Developer </h1>  
-<img align="right" alt="Gabriel-pic" height="auto" width="200" style="border-radius:50%" src="https://cdn.discordapp.com/attachments/864302495957516318/1242894711266742354/435878738_18427443592042724_5478427199775380993_n_1.jpg?ex=664f7f67&is=664e2de7&hm=e49540586f3f0346e21b1022e2e3d9f81a2e9ca80d799892d2b8f9194e77b13f&">
+
 <br/>
 <h2>Welcome to my profile!</h2>
 <p>- 🔭 I'm looking for a <strong>Front-End</strong> job</p>
