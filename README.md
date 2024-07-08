@@ -3,7 +3,7 @@
 <br/>
 <h2>Welcome to my profile!</h2>
 <p>- 🔭 I'm looking for a <strong>Front-End</strong> job</p>
-<p>- 🌱 I'm learning Python at the moment</p>
+<p>- 🌱 I'm learning Angular at the moment</p>
 <p>- 📫 Contact email: gabrielmellomoraes1407@gmail.com</p>
 <p>- 😄 Let´s go code!</p>
 <div align="center">
