@@ -1,8 +1,8 @@
-<h1 align="center">Hello, I'm Gabriel Mello 🤝, nice to meet you! I'am Front-End developer and a future Fullstack Developer </h1>  
+<h1 align="center">Hello, I'm Gabriel Mello 🤝, nice to meet you! I'am  Fullstack Developer </h1>  
 
 <br/>
 <h2>Welcome to my profile!</h2>
-<p>- 🔭 I'm <strong>Full-Stack</strong> Developer job</p>
+<p>- 🔭 I'm <strong>Full-Stack</strong> Developer </p>
 <p>- 🌱 I am a Developer Analyst at UENP (State University of Northern Paraná)</p>
 <p>- 📫 Contact email: gabrielmellomoraes1407@gmail.com</p>
 <p>- 😄 Let´s go code!</p>
