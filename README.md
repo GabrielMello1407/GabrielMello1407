@@ -2,8 +2,8 @@
 
 <br/>
 <h2>Welcome to my profile!</h2>
-<p>- 🔭 I'm looking for a <strong>Front-End</strong> job</p>
-<p>- 🌱 I'm learning backend node at moment</p>
+<p>- 🔭 I'm <strong>Full-Stack</strong> Developer job</p>
+<p>- 🌱 I am a Developer Analyst at UENP (State University of Northern Paraná)</p>
 <p>- 📫 Contact email: gabrielmellomoraes1407@gmail.com</p>
 <p>- 😄 Let´s go code!</p>
 <div align="center">
