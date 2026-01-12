@@ -14,12 +14,6 @@
 </div>
 
 <br/>
-<div align="center">
-<a href="https://github.com/GabrielMello1407"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=gabrielmello1407&count_private=true&show_icons=true&theme=dracula"/>
-<img height="180em" width="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gabrielmello1407&hide=contribs,prs&count_private=true&show_icons=true&theme=dracula"/>
-  <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gabrielmello1407&" alt="gabrielmello1407" /></p>
-</div>
 <div style="display: inline_block" align="center"><br>
   <h2>◉ My Languages and Tools</h2>
   <img align="center" style="max-width: 100% alt="Gabriel-HTML" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
