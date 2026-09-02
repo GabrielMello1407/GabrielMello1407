@@ -4,7 +4,7 @@
 <h2>Welcome to my profile!</h2>
 <p>- 🔭 I'm <strong>Sofware Enginner and Developer Analyst at UENP (State University of Northern Paraná)</strong> </p>
 <p>- 📫 Contact email: gabrielmellomoraes1407@gmail.com or access </p>
-<p>- 📫 My portifolio: <a href="[gabriel-mello.com](https://gabriel-mello.com/)">Access here</a> </p>
+<p>- 📫 My portifolio: <a href="https://gabriel-mello.com">Access here </a> </p>
 <p>- 😄 Let´s go code!</p>
 <div align="center">
   <h3>Connect with me:</h3>
