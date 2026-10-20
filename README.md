@@ -48,7 +48,7 @@ An open-source molecular learning environment with a custom 2D editor, RDKit val
 
 <a href="https://compraspublicas.uenp.edu.br/"><picture><source media="(max-width: 600px)" srcset="project-03-mobile.svg" /><img src="project-03.svg" width="100%" alt="Compras Públicas: Gemini and retrieval augmented generation for public procurement documents." /></picture></a>
 
-A production system for preliminary technical studies at UENP, combining Gemini, retrieval-augmented generation and institutional document production. [View platform ↗](https://geradoretpdigital.uenp.edu.br/)
+A production system for preliminary technical studies at UENP, combining Gemini, retrieval-augmented generation and institutional document production. [View platform ↗](https://compraspublicas.uenp.edu.br/)
 
 **04 / AITEC — Institutional Platform · Full Stack**
 
