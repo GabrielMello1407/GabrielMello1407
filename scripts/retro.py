@@ -110,7 +110,7 @@ def fetch():
     return {'updated':datetime.now().isoformat(timespec='seconds')+'Z','current':current,'longest':longest,'commits':c['totalCommitContributions'],'contributions':cal['totalContributions'],'repos':u['repositories']['totalCount'],'days':days}
 
 def score(data):
-    b=rect(0,0,960,330,INK)+text('SAVE FILE / GITHUB',28,24,3,TEAL)
+    b=rect(0,0,960,502,INK)+text('SAVE FILE / GITHUB',28,24,3,TEAL)
     b+=text('LAST 12 MONTHS',740,30,2,'#a9c4bf')
     metrics=[('CURRENT STREAK','current','DAYS'),('BEST STREAK','longest','DAYS'),('COMMITS','commits','12 MONTHS'),('CONTRIBUTIONS','contributions','12 MONTHS')]
     for i,(label,key,unit) in enumerate(metrics):
@@ -118,14 +118,70 @@ def score(data):
         b+=rect(x,68,204,105,'#304954')+text(label,x+12,81,2,c)
         b+=text(str(data[key]) if data else '--',x+12,105,4,PAPER)+text(unit,x+12,147,1.5,'#a9c4bf')
     days=data.get('days',[])[-182:] if data else []
+    b+=activity_game(days)
+    b+=text('SYNCED '+data['updated'][:10] if data else 'SYNC PENDING',28,479,1,'#a9c4bf')
+    (OUT/'score.svg').write_text(svg(b,960,502,'Real GitHub score with Commit Quest, an automatic platformer animation over the last 26 weeks of contribution days. '+json.dumps({k:v for k,v in (data or {}).items() if k!='days'})))
+
+
+def game_route(days):
+    """One landing per week: its busiest real day, or a bridge on an empty week."""
+    route=[]
+    for week in range((len(days)+6)//7):
+        block=days[week*7:week*7+7]
+        row=max(range(len(block)),key=lambda i:block[i]['contributionCount'])
+        active=block[row]['contributionCount']>0
+        route.append({'x':58+week*32,'y':290+row*20-28 if active else 406,
+                      'active':active,'day':block[row]})
+    return route
+
+
+def activity_game(days):
+    b=text('COMMIT QUEST',28,198,2,TEAL)+text('AUTO PLAY / 26 WEEKS',640,201,1.5,GOLD)
+    b+=text('YOUR CONTRIBUTIONS ARE THE LEVEL',28,225,1,'#a9c4bf')
+    colors=['#304954','#416b67','#509b83',TEAL,GOLD]
     for i,d in enumerate(days):
-        n=d['contributionCount'];col=['#304954','#416b67','#509b83',TEAL,GOLD][0 if n==0 else min(4,1+(n>3)+(n>8)+(n>15))]
-        x=28+(i//7)*22;y=201+(i%7)*12
-        b+=f'<g><title>{d["date"]}: {n} contributions</title>'+rect(x,y,16,8,col)+'</g>'
-    b+=text('ACTIVITY MAP',640,205,2,TEAL)+text('26 WEEKS / PUBLIC DATA',640,232,1,'#a9c4bf')
-    b+=text('STREAK = DAYS WITH CONTRIBUTIONS',640,257,1,'#a9c4bf')
-    b+=text('SYNCED '+data['updated'][:10] if data else 'SYNC PENDING / NEVER INVENTED',28,306,1,'#a9c4bf')
-    (OUT/'score.svg').write_text(svg(b,960,330,'Real GitHub score: '+json.dumps({k:v for k,v in (data or {}).items() if k!='days'})+'. Streaks use contribution days in the last 12 months.'))
+        n=d['contributionCount']
+        c=colors[0 if n==0 else min(4,1+(n>3)+(n>8)+(n>15))]
+        x=56+(i//7)*32;y=290+(i%7)*20
+        b+=f'<g><title>{d["date"]}: {n} contributions</title>'+rect(x,y,24,14,c)
+        if n: b+=rect(x+2,y+2,20,2,'#a8dfbf')
+        b+='</g>'
+    b+=rect(28,434,904,4,'#416b67')
+    route=game_route(days)
+    if not route: return b
+    # 0-90% traversal; final 10% celebrates at the flag. The reset is hidden.
+    stops=[{'x':28,'y':406}]+route+[{'x':906,'y':406}]
+    steps=len(stops)-1
+    frames=[]
+    for i,p in enumerate(stops):
+        t=90*i/steps
+        frames.append(f'{t:.3f}%{{transform:translate({p["x"]}px,{p["y"]}px)}}')
+        if i<steps:
+            q=stops[i+1]
+            frames.append(f'{90*(i+.5)/steps:.3f}%{{transform:translate({(p["x"]+q["x"])/2}px,{min(p["y"],q["y"])-30}px)}}')
+    frames.append('94%{transform:translate(906px,366px)}98%,100%{transform:translate(906px,382px)}')
+    css='@keyframes questRun{'+''.join(frames)+'}.runner{animation:questRun 30s linear infinite;transform:translate(28px,382px)}'
+    css+='@keyframes questVisibility{0%,98%{opacity:1}99%,100%{opacity:0}}.runnerFade{animation:questVisibility 30s linear infinite}'
+    for i,p in enumerate(route):
+        if not p['active']:
+            b+=rect(p['x']-2,434,24,4,'#a9c4bf');continue
+        t=90*(i+1)/steps
+        css+=f'@keyframes loot{i}{{0%,{max(0,t-1):.3f}%{{opacity:1}}{t:.3f}%,99%{{opacity:0}}100%{{opacity:1}}}}'
+        b+=f'<g style="animation:loot{i} 30s linear infinite">'+coin(p['x']+4,p['y']-18)+'</g>'
+        if i%6==0:
+            # A small checkpoint on an actual landing tile.
+            b+=rect(p['x']+21,p['y']+8,2,20,PAPER)+rect(p['x']+23,p['y']+8,8,5,PINK)
+    css+='@keyframes finish{0%,89%{opacity:0}91%,98%{opacity:1}100%{opacity:0}}.finish{animation:finish 30s steps(1,end) infinite;opacity:0}'
+    b+='<style>'+css+'</style>'
+    # Original tiny developer sprite. Its feet meet each selected tile exactly.
+    player=['..hhhh..','.hhhhhh.','.hssss..','..sgsg..','..ssss..','...ss...','..ttttb.','.tttttb.','.tstttb.','..tttt..','..pppp..','..p.pp..','.dd.dd..','.dd.dd..']
+    b+='<g class="runnerFade"><g class="runner">'+sprite(player,0,0,2,{'h':'#12212e','s':'#efbc93','g':INK,'t':'#f5e9c9','b':PINK,'p':'#9caff0','d':'#f5e9c9'})+'</g></g>'
+    b+=rect(918,389,3,45,PAPER)+rect(921,389,12,12,TEAL)+rect(925,369,4,4,INK)
+    b+='<g class="finish">'+text('LEVEL CLEAR',680,264,2,GOLD)+'</g>'
+    b+=text('LOW',640,460,1,'#a9c4bf')
+    for i,c in enumerate(colors): b+=rect(672+i*14,459,10,8,c)
+    b+=text('HIGH / REAL DAILY ACTIVITY',750,460,1,'#a9c4bf')
+    return b
 
 if __name__=='__main__':
     hero();quests()
