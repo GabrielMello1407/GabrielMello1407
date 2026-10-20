@@ -1,0 +1,35 @@
+name: Update retro score
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/retro.py', '.github/workflows/retro-score.yml']
+permissions:
+  contents: write
+concurrency:
+  group: retro-score
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Render real score and pixel assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/retro.py
+      - name: Commit updated score
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add retro/
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh real GitHub score'
+            git push
+          fi
