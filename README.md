@@ -44,9 +44,9 @@ A production SaaS for WhatsApp automation with visual flow creation, multi-provi
 
 An open-source molecular learning environment with a custom 2D editor, RDKit validation, three-dimensional geometry and an optional AI tutor. **The deterministic engine verifies; AI explains.** [Source code ↗](https://github.com/GabrielMello1407/Rotamer) · [Project site ↗](https://rotamer.vercel.app/)
 
-**03 / Gerador de ETP — Institutional AI · GovTech**
+**03 / Compras Públicas — Institutional AI · GovTech**
 
-<a href="https://geradoretpdigital.uenp.edu.br/"><picture><source media="(max-width: 600px)" srcset="project-03-mobile.svg" /><img src="project-03.svg" width="100%" alt="Gerador de ETP: Gemini and retrieval augmented generation for public procurement documents." /></picture></a>
+<a href="https://compraspublicas.uenp.edu.br/"><picture><source media="(max-width: 600px)" srcset="project-03-mobile.svg" /><img src="project-03.svg" width="100%" alt="Compras Públicas: Gemini and retrieval augmented generation for public procurement documents." /></picture></a>
 
 A production system for preliminary technical studies at UENP, combining Gemini, retrieval-augmented generation and institutional document production. [View platform ↗](https://geradoretpdigital.uenp.edu.br/)
 
