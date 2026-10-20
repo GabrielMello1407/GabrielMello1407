@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="266" viewBox="0 0 1200 266" role="img" aria-label="Contact Gabriel Mello and build something that matters"><title>Contact Gabriel Mello and build something that matters</title><style>
+.t{font-family:'Segoe UI',Inter,Arial,sans-serif;fill:#F1F5F8}.m{font-family:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;fill:#9DAEBB}
+.muted{fill:#9DAEBB}.dim{fill:#6E8796}.accent{fill:#83D6C4}
+.scan{animation:scan 8s linear infinite}.breathe{animation:breathe 5s ease-in-out infinite}.dash{stroke-dasharray:4 9;animation:flow 9s linear infinite}
+.pulse{animation:breathe 3.5s ease-in-out infinite}.reveal{animation:reveal 1.5s ease-out backwards}.r2{animation-delay:.25s}.r3{animation-delay:.5s}.r4{animation-delay:.75s}
+.turn{transform-box:fill-box;transform-origin:center;animation:turn 28s linear infinite}.turnback{transform-box:fill-box;transform-origin:center;animation:turnback 34s linear infinite}
+.blink{animation:blink 1.1s step-end infinite}.shimmer{animation:shimmer 6s ease-in-out infinite}.glyph{animation:letterIn .30s ease-out both}
+@keyframes letterIn{from{opacity:0}to{opacity:1}}
+@keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes scan{0%{transform:translateX(-250px);opacity:0}25%{opacity:1}75%{opacity:1}100%{transform:translateX(600px);opacity:0}}
+@keyframes flow{to{stroke-dashoffset:-130}}@keyframes reveal{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes turn{to{transform:rotate(360deg)}}@keyframes turnback{to{transform:rotate(-360deg)}}
+@keyframes shimmer{0%,100%{opacity:.15}50%{opacity:.6}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
+</style><defs><linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#121B23"/><stop offset="1" stop-color="#0C1117"/></linearGradient><linearGradient id="aura" x1="0" x2="1"><stop stop-color="#83D6C4" stop-opacity="0"/><stop offset=".5" stop-color="#83D6C4" stop-opacity=".16"/><stop offset="1" stop-color="#83D6C4" stop-opacity="0"/></linearGradient><radialGradient id="halo"><stop stop-color="#83D6C4" stop-opacity=".21"/><stop offset="1" stop-color="#83D6C4" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="266" rx="18" fill="url(#base)"/><rect x=".8" y=".8" width="1198.4" height="264.4" rx="17.2" fill="none" stroke="#293947"/><text x="36" y="45" class="m" font-size="12" font-weight="600" style="fill:#83D6C4" letter-spacing="2">END OF TRANSMISSION / START OF CONVERSATION</text><text x="35" y="116" class="t" font-size="59" font-weight="740" style="fill:#F1F5F8">LET'S BUILD</text><text x="36" y="172" class="t" font-size="44" font-weight="700" style="fill:#F1F5F8">SOMETHING THAT MATTERS.</text><line x1="37" y1="198" x2="1161" y2="198" stroke="#293947" stroke-width="1"/><text x="39" y="236" class="m" font-size="18" font-weight="600" style="fill:#83D6C4">gabriel-mello.com</text><text x="1161" y="237" class="m" font-size="12" font-weight="500" style="fill:#9DAEBB" text-anchor="end">GITHUB  /  LINKEDIN  /  EMAIL</text></svg>
